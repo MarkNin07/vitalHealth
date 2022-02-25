@@ -1,0 +1,197 @@
+/* ------------------ */
+/* Custom Propierties */
+/* ------------------ */
+
+
+:root {
+  /* font-families */
+  --font-sans-title: 'Source Sans Pro', sans-serif;
+  --font-sans-normal: 'Roboto', sans-serif;
+  --font-mono:  'JetBrains Mono', monospace;
+
+  /* font-sizes */
+  --fs-largest: 6rem; /* 96px */
+  --fs-larger: 3.75rem; /* 60px */
+  --fs-large: 3rem; /* 48px */
+  --fs-medium : 1rem; /* 16px */
+  --fs-small: 0.875rem; /* 14px */
+  --fs-smaller: 0.75rem; /* 12px */
+  --fs-smallest:  0.625rem;/* 10px */
+
+  /* color */
+  --clr-blue: 220, 60%, 38%;                    /* Do not USE THIS, use variable below instead */
+  --clr-dark-blue: 220, 61%, 26%;  /* Do not USE THIS, use variable below instead */
+  --clr-green: 81, 64%, 59%;                 /* Do not USE THIS, use variable below instead */
+
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(219, 62%, 10%);
+  --clr-gray: hsl(0, 0%, 90%);
+
+  --clr-primary: var(--clr-blue);
+  --clr-primary-variant: var(--clr-dark-blue);
+  --clr-secondary: var(--clr-green);
+  --clr-success:var(--clr-green);
+  --clr-warning: #eeb950;
+  --clr-error: hsl(0, 69%, 34%);
+
+}
+
+/* ----------------*/
+/* Reset styles    */
+/* --------------- */
+
+
+/* box sizing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+picture {
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset fonts */
+
+h1,
+h2,
+h3,
+h4,
+p,
+pre {
+  font-weight: 400;
+  font-size: 100%;
+}
+
+/* setup body  */
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: var(--font-sans-normal);
+  letter-spacing: 0;
+  color: var(--clr-black);
+}
+
+/* make image easier to work with */
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make forms easier to work with  */
+
+input,
+button, 
+textarea,
+select {
+  font: inherit;
+}
+
+/* ----------------- */
+/* Utility classes   */
+/* ----------------- */
+
+
+/* typography */
+
+.ff-title { font-family: var(--font-sans-title); }
+.ff-sans { font-family: var(--font-sans-normal); }
+.ff-mono { font-family: var(--font-mono) }
+
+.fs-largest  { font-size: var(--fs-largest) }
+.fs-larger   { font-size: var(--fs-larger) }
+.fs-large    { font-size: var(--fs-large) }
+.fs-medium   { font-size: var(--fs-medium) }
+.fs-small    { font-size: var(--fs-small) }
+.fs-smaller  { font-size: var(--fs-smaller) }
+.fs-smallest { font-size: var(--fs-smallest) }
+
+.uppercase { text-transform:uppercase; }
+.capitalize { text-transform: capitalize;}
+
+.fw-light { font-weight: 300; }
+.fw-regular { font-weight: 400; }
+.fw-bold { font-weight: 700; }
+
+/* .ls-smallest { letter-spacing: -0.0938rem; } 
+.ls-smaller  { letter-spacing: 0; }  
+.ls-one { letter-spacing: 0; }
+.ls-medium { letter-spacing: 0.015625rem; } 0.25px */
+
+.ls-largest  { letter-spacing: 1.25px }
+.ls-larger   { letter-spacing: 1px }
+.ls-large    { letter-spacing: 0.5px }
+.ls-medium   { letter-spacing: 0 }
+.ls-small    { letter-spacing: -0.5px }
+.ls-smaller  { letter-spacing: -1px }
+.ls-smallest { letter-spacing: -1.5px }
+
+.lh-medium { line-height: 100px; }
+
+.bg-primary { background-color: hsl(var(--clr-primary)) }
+.bg-primary-variant { background-color: hsl( var(--clr-primary-variant) ) }
+.bg-secondary { background-color: hsl( var(--clr-secondary) ); }
+.bg-white { background-color: var(--clr-white) }
+.bg-black { background-color: var(--clr-black) }
+.bg-surface { background-color: var(--clr-gray) }
+.bg-warning { background-color: var(--clr-warning) }
+.bg-error { background-color: var(--clr-error) }
+
+.text-white { color: var(--clr-white) }
+.text-black { color:var(--clr-black) }
+
+
+/* ---------------- */
+/* utilily classes  */
+/* ---------------- */
+
+.container {
+  padding-inline: 2rem;
+  margin-inline: auto;
+  max-width: 70rem;
+}
+
+.container.layout{
+  padding-block: 1rem; 
+  border-radius: 5px;
+}
+
+/* flexbox */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+  flex-wrap: wrap;
+}
+
+.flex > * {
+  padding: 1rem 2rem;
+}
+
+.flex.flex-col-2 > * {
+  width: calc( 50% - 0.5*var(--gap, 1rem) );
+}
+
+.flex.flex-col-3 > * {
+  width: calc( 33% - var(--gap, 1rem) );
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-space,2rem);
+  /* border: 1px solid red; */
+}
