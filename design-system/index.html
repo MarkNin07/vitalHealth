@@ -13,9 +13,9 @@
     />
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body class="flow">
-    <header class="container flow">
-      <h1 class="fs-largest fw-light ls-smallest lh-medium">VitalHealth's Design system</h1>
+  <body >
+    <header class="container" style="margin-bottom:4rem">
+      <h1 class="ff-title fs-largest fw-light ls-smallest lh-medium">VitalHealth's Design system</h1>
       <p>
         VitalHealth's design system aims to match the brand's principles and
         identity. A design system by MisionTic developers to help teams build
@@ -23,10 +23,11 @@
         mobile responsive approach.
       </p>
     </header>
-
-    <section class="container">
-      <h2 class="fs-larger capitalize fw-light ls-small">Fundations</h2>
-      <p>Here, you will find all about our brand identity</p>
+    <main class="container flow">
+      <header>
+        <h2 class="ff-title fs-larger capitalize fw-light ls-small">Fundations</h2>
+        <p>Here, you will find all about our brand identity</p>
+      </header>
       <article>
         <h3 class="ff-title fs-large capitalize ls-medium">Typography</h3>
         <p>The description in this section is set as follow:</p>
@@ -34,31 +35,98 @@
 font-family, font-size, text-transform, font-weight, letter-spacing</pre
         >
         <div class="layout bg-surface container">
-          <p>Title 1</p>
-          <p>Open Sans, 96px, capitalize, light, -1.5</p>
-          <p>Title 2</p>
-          <p>Open Sans, 60px, capitalize, light, 0.5</p>
-          <p>Title 3</p>
-          <p>Open Sans, 48px, capitalize, light, 0</p>
+          <p class="ff-title fs-largest fw-light">Title 1</p>
+          <p >Source Sans Pro, 96px, capitalize, light, -1.5</p>
+          <p class="ff-title fs-larger capitalize fw-light ls-small">Title 2</p>
+          <p >Source Sans Pro, 60px, capitalize, light, 0.5</p>
+          <p class="ff-title fs-large capitalize ls-medium">Title 3</p>
+          <p>Source Sans Pro, 48px, capitalize, light, 0</p>
           <p>Parragraph</p>
-          <p>Open Sans, 28px, capitalize, regular, 0.5</p>
+          <p> Roboto, 28px, capitalize, regular, 0.5</p>
         </div>
       </article>
       <article>
         <h3 class="ff-title fs-large">Colors</h3>
         <p>Here, the colors used for render elements and compoments troughout the web site.</p>
         <div class="flex flex-col-3 container layout bg-surface">
-          <div class="bg-primary text-white">Primary</div>
-          <div class="bg-primary-variant text-white">Primary Variant</div>
-          <div class="bg-secondary text-black">Secondary</div>
-          <div class="bg-white">White</div>
-          <div class="bg-black text-white">Black</div>
-          <div class="bg-surface" style="border: 1px gray solid;">Surface</div>
-          <div class="bg-warning text-white">Warning</div>
-          <div class="bg-error text-white">Error</div>
+          <div class="bg-primary text-white uppercase color-container">
+            <h4 class="fw-bold" style="margin-bottom: 1rem">Primary</h4>
+            <ul>
+              <li><span class="fw-bold">HSL: </span>220, 60%, 38%</li>
+              <li><span class="fw-bold">HEX: </span>#274e9b</li>
+            </ul>
+          </div>
+          <div class="bg-primary-variant text-white uppercase color-container">
+            <h4 class="fw-bold" style="margin-bottom: 1rem">Primary Variant</h4>
+            <ul>
+              <li><span class="fw-bold">HSL: </span>220, 61%, 26%</li>
+              <li><span class="fw-bold">HEX: </span>#1a356b</li>
+            </ul>
+          </div>
+          <div class="bg-secondary text-black uppercase color-container">
+            <h4 class="fw-bold" style="margin-bottom: 1rem">Secondary</h4>
+            <ul>
+              <li><span class="fw-bold">HSL: </span>81, 64%, 59%</li>
+              <li><span class="fw-bold">HEX: </span>#1a356b</li>
+            </ul>
+          </div>
+          <div class="bg-white uppercase color-container">
+            <h4 class="fw-bold" style="margin-bottom: 1rem">White</h4>
+            <ul>
+              <li><span class="fw-bold">HSL: </span>0, 0%, 100%</li>
+              <li><span class="fw-bold">HEX: </span>#ffffff</li>
+            </ul>
+          </div>
+          <div class="bg-black text-white uppercase color-container">
+            <h4 class="fw-bold" style="margin-bottom: 1rem">Black</h4>
+            <ul>
+              <li><span class="fw-bold">HSL: </span>219, 62%, 10%</li>
+              <li><span class="fw-bold">HEX: </span>#1a356b</li>
+            </ul>
+          </div>
+          <div class="bg-surface uppercase color-container" style="border: 1px gray solid;">
+            <h4 class="fw-bold" style="margin-bottom: 1rem">Surface</h4>
+            <ul>
+              <li><span class="fw-bold">HSL: </span>0, 0%, 90%</li>
+              <li><span class="fw-bold">HEX: </span>#e6e6e6</li>
+            </ul>
+          </div>
+          <div class="bg-warning uppercase color-container">
+            <h4 class="fw-bold" style="margin-bottom: 1rem">Warning</h4>
+            <ul>
+              <li><span class="fw-bold">HSL: </span>40, 82%, 62%</li>
+              <li><span class="fw-bold">HEX: </span>#eeb950</li>
+            </ul>
+          </div>
+          <div class="bg-error text-white uppercase color-container">
+            <h4 class= "fw-bold" style="margin-bottom: 1rem">Error</h4>
+            <ul>
+              <li><span class="fw-bold">HSL: </span>0, 69%, 34%</li>
+              <li><span class="fw-bold">HEX: </span>#931b1b</li>
+            </ul>
+          </div>
         </div>
-
+        <p>Opacity only have to be implemented over primary and secondary colors</p>
+        <div class="flex flex-col-2">
+          <div class="container">
+            <div class="bg-primary text-white" style="padding: 1rem">Actual Primary Color</div>
+            <div class="bg-primary-opacity text-white" style="--opacity: .8; padding: 1rem">opacity 80%</div>
+            <div class="bg-primary-opacity " style="--opacity: .6; padding: 1rem">opacity 60%</div>
+            <div class="bg-primary-opacity " style="--opacity: .4; padding: 1rem">opacity 40%</div>
+            <div class="bg-primary-opacity " style="--opacity: .2; padding: 1rem">opacity 20%</div>
+          </div>
+          <div class="container">
+            <div class="bg-secondary" style="padding: 1rem">Actual Secondary Color</div>
+            <div class="bg-secondary-opacity text" style="--opacity: .8; padding: 1rem">opacity 80%</div>
+            <div class="bg-secondary-opacity " style="--opacity: .6; padding: 1rem">opacity 60%</div>
+            <div class="bg-secondary-opacity " style="--opacity: .4; padding: 1rem">opacity 40%</div>
+            <div class="bg-secondary-opacity " style="--opacity: .2; padding: 1rem">opacity 20%</div>
+          </div>
+        </div>
       </article>
-    </section>
+    </main>
+    <footer class="container bg-surface">
+      powered by MisionTic Devs
+    </footer>
   </body>
 </html>

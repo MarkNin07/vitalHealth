@@ -19,9 +19,9 @@
   --fs-smallest:  0.625rem;/* 10px */
 
   /* color */
-  --clr-blue: 220, 60%, 38%;                    /* Do not USE THIS, use variable below instead */
-  --clr-dark-blue: 220, 61%, 26%;  /* Do not USE THIS, use variable below instead */
-  --clr-green: 81, 64%, 59%;                 /* Do not USE THIS, use variable below instead */
+  --clr-blue: 220 60% 38%;                    /* Do not USE THIS, use variable below instead */
+  --clr-dark-blue: 220 61% 26%;  /* Do not USE THIS, use variable below instead */
+  --clr-green: 81 64% 59%;                 /* Do not USE THIS, use variable below instead */
 
   --clr-white: hsl(0, 0%, 100%);
   --clr-black: hsl(219, 62%, 10%);
@@ -31,7 +31,7 @@
   --clr-primary-variant: var(--clr-dark-blue);
   --clr-secondary: var(--clr-green);
   --clr-success:var(--clr-green);
-  --clr-warning: #eeb950;
+  --clr-warning: hsl(40, 82%, 62%);
   --clr-error: hsl(0, 69%, 34%);
 
 }
@@ -57,6 +57,7 @@ h2,
 h3,
 h4,
 p,
+ul,
 figure,
 picture {
   margin: 0;
@@ -152,8 +153,12 @@ select {
 .bg-warning { background-color: var(--clr-warning) }
 .bg-error { background-color: var(--clr-error) }
 
+.bg-primary-opacity { background-color: hsl(var(--clr-primary) / var(--opacity, 0.8) ) }
+.bg-secondary-opacity { background-color: hsl(var(--clr-secondary) / var(--opacity, 0.8) ) }
+
 .text-white { color: var(--clr-white) }
 .text-black { color:var(--clr-black) }
+.text-surface { color: var(--clr-gray) }
 
 
 /* ---------------- */
@@ -194,4 +199,9 @@ select {
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-space,2rem);
   /* border: 1px solid red; */
+}
+
+
+.color-container ul>li{
+  list-style: none;
 }
