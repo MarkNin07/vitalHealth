@@ -1,5 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import { FontAwesomeIcon as FAIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { fas,faMugHot } from '@fortawesome/free-solid-svg-icons';
+
+library.add(fas,faGithub)
+
+
 
 function App() {
   return (
@@ -15,11 +23,19 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {/* <FAIcon icon="coffee"/> */}
+          <FAIcon icon={faMugHot}/>
+          <FAIcon icon={faGithub}/>
+          <FAIcon icon="github"/>
+          <FAIcon icon={["fab","apple"]}/>
+          <FAIcon icon={["fas","search"]}/>
+          <FAIcon icon="horse"/>
+          <FAIcon icon="fa-brands fa-airbnb"/>
         </a>
       </header>
     </div>
   );
 }
+
 
 export default App;
