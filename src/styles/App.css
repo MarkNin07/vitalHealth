@@ -1,0 +1,120 @@
+/* --------------- */
+/* utility classes */
+/* --------------- */
+
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+
+
+.grid-container {
+  display: grid;
+  padding: .5rem 1rem;
+}
+/* ---------- */
+/* components */
+/* ---------- */
+
+
+/* Header */
+
+.header nav {
+  padding: .5rem 1rem;
+  --gap: 0.5rem;
+  align-items: center;
+  grid-template-areas:
+    'burger-button logo cart-shopping'
+    'searching searching searching';
+}
+
+.header nav > .burger-button {
+  grid-area: burger-button;
+  justify-self: start;
+}
+
+.header nav > img{
+  grid-area: logo;
+  justify-self: center;
+  height: 4rem;
+}
+
+.header nav > .cart-shopping {
+  grid-area: cart-shopping;
+  justify-self: end;
+  
+}
+
+.header nav > .searching-bar {
+  justify-content: center;
+  grid-area: searching;
+}
+
+/* ----------------- */
+/* unique components */
+/* ----------------- */
+
+
+/* icons custom properties  */
+
+.cart-shopping {
+  position: relative;
+  display: flex;
+  align-items: start;
+}
+
+.cart-shopping > svg {
+  transform: translateX(10%);
+}
+
+.cart-shopping > span {
+  font-size: 0.75rem;
+  transform: translateY(-50%);
+  display: inline-flex;
+  padding-inline: .25rem;
+  /* padding-block-start: .125rem; */
+  aspect-ratio: 1;
+  align-items: center;
+  border-radius: 50%;
+
+}
+
+svg.svg-inline--fa.fa-magnifying-glass  {
+  height: 1.5rem !important;
+}
+
+/* Burger button */
+
+.burger-button {
+  background-color: transparent;
+  padding: 0.25rem;
+  border: 0;
+  /* border: 1px solid; */
+  border-radius: .5rem;
+  color: hsl(var(--clr-white));
+  cursor: pointer;
+}
+
+
+/* searching bar */
+
+.searching-bar {
+  --gap: 0;
+}
+
+.searching-bar>label {
+  background-color: hsl(var(--clr-primary));
+  padding: .5rem;
+  border-radius: 0 .5rem .5rem 0;
+}
+.searching-bar .svg {
+  height: 1.5rem;
+}
+.searching-bar>input {
+  padding: .5rem 0 .5rem 1rem;
+  width: 100%;
+  border: 0;
+  border-radius: .5rem 0 0 .5rem;
+}
