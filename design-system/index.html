@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VitalHealth's Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Roboto:wght@300;400;500&family=Source+Sans+Pro:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="container" style="margin-bottom: 4rem">
+      <h1 class="ff-title fs-96 ls-150n fw-light lh-medium">
+        VitalHealth's Design system
+      </h1>
+      <p>
+        VitalHealth's design system aims to match the brand's principles and
+        identity. A design system by MisionTic developers to help teams build
+        comfortable and fast-developing digital experiences on the web and a
+        mobile responsive approach.
+      </p>
+    </header>
+    <main class="container flow">
+
+      <!----------------> 
+      <!-- Fundations -->
+      <!----------------> 
+
+      <section id="fundation">
+        <header>
+          <h2 class="ff-title fs-60 capitalize fw-light ls-small">
+            Fundations
+          </h2>
+          <p>Here, you will find all about our brand identity</p>
+        </header>
+
+        <!-- Typography -->
+        <article>
+          <h3 class="ff-title fs-48 capitalize ls-medium">Typography</h3>
+          <p>The description in this section is set as follow:</p>
+          <pre class="ff-mono fs-small bg-surface container layout">
+  font-family, font-size, text-transform, font-weight, letter-spacing</pre
+          >
+          <div class="layout bg-surface container">
+            <p class="ff-title fs-96 fw-light">Title 1</p>
+            <p>Source Sans Pro, 96px, capitalize, light, -1.5</p>
+            <p class="ff-title fs-60 capitalize fw-light ls-small">Title 2</p>
+            <p>Source Sans Pro, 60px, capitalize, light, 0.5</p>
+            <p class="ff-title fs-48 capitalize fw-regular ls-medium">
+              Title 3
+            </p>
+            <p>Roboto, 48px, capitalize, light, 0</p>
+            <p>Parragraph</p>
+            <p>Roboto, 28px, mixed, regular, 0.5</p>
+            <p class="fs-14 uppercase fw-medium ls-125">button</p>
+            <p>Roboto, 14px, uppercase, 1.25</p>
+          </div>
+        </article>
+
+        <!-- colors -->
+        <article>
+          <h3 class="ff-title fs-48">Colors</h3>
+          <p>
+            Here, the colors used for render elements and compoments troughout
+            the web site.
+          </p>
+          <div class="flex flex-col-3 container layout bg-surface">
+            <div class="bg-primary text-white uppercase color-container">
+              <h4 class="fw-bold" style="margin-bottom: 1rem">Primary</h4>
+              <ul>
+                <li><span class="fw-bold">HSL: </span>220, 60%, 38%</li>
+                <li><span class="fw-bold">HEX: </span>#274e9b</li>
+              </ul>
+            </div>
+            <div
+              class="bg-primary-variant text-white uppercase color-container"
+            >
+              <h4 class="fw-bold" style="margin-bottom: 1rem">
+                Primary Variant
+              </h4>
+              <ul>
+                <li><span class="fw-bold">HSL: </span>220, 61%, 26%</li>
+                <li><span class="fw-bold">HEX: </span>#1a356b</li>
+              </ul>
+            </div>
+            <div class="bg-secondary text-black uppercase color-container">
+              <h4 class="fw-bold" style="margin-bottom: 1rem">Secondary</h4>
+              <ul>
+                <li><span class="fw-bold">HSL: </span>81, 64%, 59%</li>
+                <li><span class="fw-bold">HEX: </span>#abd954</li>
+              </ul>
+            </div>
+            <div class="bg-white uppercase color-container">
+              <h4 class="fw-bold" style="margin-bottom: 1rem">White</h4>
+              <ul>
+                <li><span class="fw-bold">HSL: </span>0, 0%, 100%</li>
+                <li><span class="fw-bold">HEX: </span>#ffffff</li>
+              </ul>
+            </div>
+            <div class="bg-black text-white uppercase color-container">
+              <h4 class="fw-bold" style="margin-bottom: 1rem">Black</h4>
+              <ul>
+                <li><span class="fw-bold">HSL: </span>219, 62%, 10%</li>
+                <li><span class="fw-bold">HEX: </span>#0a1529</li>
+              </ul>
+            </div>
+            <div
+              class="bg-surface uppercase color-container"
+              style="border: 1px gray solid"
+            >
+              <h4 class="fw-bold" style="margin-bottom: 1rem">Surface</h4>
+              <ul>
+                <li><span class="fw-bold">HSL: </span>0, 0%, 90%</li>
+                <li><span class="fw-bold">HEX: </span>#e6e6e6</li>
+              </ul>
+            </div>
+            <div class="bg-warning uppercase color-container">
+              <h4 class="fw-bold" style="margin-bottom: 1rem">Warning</h4>
+              <ul>
+                <li><span class="fw-bold">HSL: </span>40, 82%, 62%</li>
+                <li><span class="fw-bold">HEX: </span>#eeb950</li>
+              </ul>
+            </div>
+            <div class="bg-error text-white uppercase color-container">
+              <h4 class="fw-bold" style="margin-bottom: 1rem">Error</h4>
+              <ul>
+                <li><span class="fw-bold">HSL: </span>0, 69%, 34%</li>
+                <li><span class="fw-bold">HEX: </span>#931b1b</li>
+              </ul>
+            </div>
+          </div>
+          <p>
+            Opacity only have to be implemented over primary and secondary
+            colors
+          </p>
+          <div class="flex flex-col-3">
+            <div class="container">
+              <div class="bg-primary text-white" style="padding: 1rem">
+                Actual Primary Color
+              </div>
+              <div
+                class="bg-primary-opacity text-white"
+                style="--opacity: 0.8; padding: 1rem"
+              >
+                opacity 80%
+              </div>
+              <div
+                class="bg-primary-opacity"
+                style="--opacity: 0.6; padding: 1rem"
+              >
+                opacity 60%
+              </div>
+              <div
+                class="bg-primary-opacity"
+                style="--opacity: 0.4; padding: 1rem"
+              >
+                opacity 40%
+              </div>
+              <div
+                class="bg-primary-opacity"
+                style="--opacity: 0.2; padding: 1rem"
+              >
+                opacity 20%
+              </div>
+            </div>
+            <div class="container">
+              <div class="bg-secondary" style="padding: 1rem">
+                Actual Secondary Color
+              </div>
+              <div
+                class="bg-secondary-opacity"
+                style="--opacity: 0.8; padding: 1rem"
+              >
+                opacity 80%
+              </div>
+              <div
+                class="bg-secondary-opacity"
+                style="--opacity: 0.6; padding: 1rem"
+              >
+                opacity 60%
+              </div>
+              <div
+                class="bg-secondary-opacity"
+                style="--opacity: 0.4; padding: 1rem"
+              >
+                opacity 40%
+              </div>
+              <div
+                class="bg-secondary-opacity"
+                style="--opacity: 0.2; padding: 1rem"
+              >
+                opacity 20%
+              </div>
+            </div>
+            <div class="container">
+              <div class="bg-gray-dark text-white" style="padding: 1rem">
+                <span>Dark gray </span><b>#7A7A7A</b>
+              </div>
+              <div class="bg-gray" style="padding: 1rem">
+                <span>Gray </span><b>#E6E6E6</b>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!----------------> 
+      <!-- Components -->
+      <!----------------> 
+
+      <section id="components">
+        <header>
+          <h2 class="ff-title fs-60 fw-light">Components</h2>
+          <p>Material Components are interactive building blocks for creating a user interface.</p>
+        </header>
+        <article>
+          <h3 class="ff-title fs-48">Button</h3>
+          <p>
+            Buttons are a fundamental part of web platform. So, we define the
+            behavior that must be implemented in a correct situation.
+          </p>
+          <div>
+            <button class="button uppercase text-primary fw-medium ls-125 button__primary">primary 1</button>
+            <div class="bg-black" style="display:inline-block;padding: 10px"><button class="button ls-125 text-white uppercase fw-medium">primary 2</button></div>
+            <button class="button uppercase ">Secondary</button>
+            <button class="button" disabled>disabled</button>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="container bg-surface">powered by MisionTic Devs</footer>
+  </body>
+</html>
