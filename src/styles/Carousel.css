@@ -1,0 +1,79 @@
+.carousel {
+    position: relative;
+    width: 100vw;
+    height: calc(400vw / 3);
+}
+
+.carousel__track-container {
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel__track{
+    list-style: none;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    transition: transform 400ms ease-in;
+}
+
+.carousel__slide {
+    position: absolute;
+    width: 100%;
+}
+
+.carousel__slide.active {
+    z-index: 100;
+}
+
+.carousel__slide a{
+    display: block;
+}
+
+.carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel__nav {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    /* background-color: red; */
+    padding-block: .5rem;
+}
+
+.carousel__indicator {
+    width: .5rem;
+    aspect-ratio: 1;
+    background-color: #00000031;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel__indicator.current {
+    transform: scale(1.5);
+    background-color: #000000a2;
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    border: 0;
+    padding: .5rem;
+    background-color: #c2c2c270;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.carousel__button--left {
+    left: 0.125rem;
+}
+
+.carousel__button--right {
+    right: 0.125rem;
+}

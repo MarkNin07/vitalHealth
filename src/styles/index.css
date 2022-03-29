@@ -14,6 +14,8 @@
   --fs-96: 6rem; /* 96px */
   --fs-60: 3.75rem; /* 60px */
   --fs-48: 3rem; /* 48px */
+  --fs-36: 2.25rem; /* 18px */
+  --fs-24: 1.5rem; /* 18px */
   --fs-18: 1.125rem; /* 18px */
   --fs-16 : 1rem; /* 16px */
   --fs-14: 0.875rem; /* 14px */
@@ -99,6 +101,15 @@ input {
 .ff-title { font-family: var(--font-sans-title); }
 .ff-sans { font-family: var(--font-sans-normal); }
 .ff-mono { font-family: var(--font-mono) }
+
+.fs-12 { font-size: var(--fs-12); }
+.fs-14 { font-size: var(--fs-14); }
+.fs-16 { font-size: var(--fs-16); }
+.fs-18 { font-size: var(--fs-18); }
+.fs-24 { font-size: var(--fs-24); }
+.fs-36 { font-size: var(--fs-36); }
+
+.uppercase { text-transform: uppercase; }
 
 /* colors */
 
