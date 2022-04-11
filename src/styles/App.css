@@ -2,32 +2,28 @@
 /* utility classes */
 /* --------------- */
 
-
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
 }
 
-
-
 .grid-container {
   display: grid;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 /* ---------- */
 /* components */
 /* ---------- */
 
-
 /* Header */
 
 .header > nav {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   --gap: 0.5rem;
   align-items: center;
   grid-template-areas:
-    'burger-button logo cart-shopping'
-    'searching searching searching';
+    "burger-button logo cart-shopping"
+    "searching searching searching";
 }
 
 .header nav > .burger-button {
@@ -35,7 +31,7 @@
   justify-self: start;
 }
 
-.header nav > img{
+.header nav > img {
   grid-area: logo;
   justify-self: center;
   height: 4rem;
@@ -44,7 +40,6 @@
 .header nav > .cart-shopping {
   grid-area: cart-shopping;
   justify-self: end;
-  
 }
 
 .header nav > .searching-bar {
@@ -54,7 +49,7 @@
 
 .layout-over {
   position: fixed;
-  z-index:1000000;
+  z-index: 1000000;
   inset: 0;
   background-color: #000000aa;
 }
@@ -74,18 +69,18 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap:0.5rem;
+  gap: 0.5rem;
 }
 
-.menu__items li{
-  padding: .75rem;
+.menu__items li {
+  padding: 0.75rem;
 }
 
 .menu .menu__close-button {
   display: block;
   margin-inline-start: auto;
   padding: 1rem 0.5rem;
-  background-color:transparent;
+  background-color: transparent;
   border: 0;
   cursor: pointer;
 }
@@ -93,7 +88,6 @@
 /* ----------------- */
 /* unique atoms */
 /* ----------------- */
-
 
 /* icons custom properties  */
 
@@ -111,15 +105,14 @@
   font-size: 0.75rem;
   transform: translateY(-50%);
   display: inline-flex;
-  padding-inline: .25rem;
+  padding-inline: 0.25rem;
   /* padding-block-start: .125rem; */
   aspect-ratio: 1;
   align-items: center;
   border-radius: 50%;
-
 }
 
-svg.svg-inline--fa.fa-magnifying-glass  {
+svg.svg-inline--fa.fa-magnifying-glass {
   height: 1.5rem !important;
 }
 
@@ -130,11 +123,10 @@ svg.svg-inline--fa.fa-magnifying-glass  {
   padding: 0.25rem;
   border: 0;
   /* border: 1px solid; */
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   color: hsl(var(--clr-white));
   cursor: pointer;
 }
-
 
 /* searching bar */
 
@@ -142,17 +134,17 @@ svg.svg-inline--fa.fa-magnifying-glass  {
   --gap: 0;
 }
 
-.searching-bar>label {
+.searching-bar > label {
   background-color: hsl(var(--clr-primary));
-  padding: .5rem;
-  border-radius: 0 .5rem .5rem 0;
+  padding: 0.5rem;
+  border-radius: 0 0.5rem 0.5rem 0;
 }
 .searching-bar .svg {
   height: 1.5rem;
 }
-.searching-bar>input {
-  padding: .5rem 0 .5rem 1rem;
+.searching-bar > input {
+  padding: 0.5rem 0 0.5rem 1rem;
   width: 100%;
   border: 0;
-  border-radius: .5rem 0 0 .5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
 }
